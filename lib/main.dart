@@ -9,25 +9,30 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: ElevatedButtonDemo());
+    return const MaterialApp(
+      title: 'Elevated Button Demo',
+      home: HomeScreen(), // This moves Scaffold into its own widget
+    );
   }
 }
 
-class ElevatedButtonDemo extends StatelessWidget {
-  const ElevatedButtonDemo({super.key});
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('ElevatedButton Demo')),
+      appBar: AppBar(title: const Text('Elevated Button Demo')),
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            ScaffoldMessenger.of(
-              context,
-            ).showSnackBar(const SnackBar(content: Text('Button Pressed!')));
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('You clicked me now!'),
+              ),
+            );
           },
-          child: const Text('Click Me'),
+          child: const Text('Click me now'),
         ),
       ),
     );
