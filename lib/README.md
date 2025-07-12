@@ -1,15 +1,39 @@
-# ElevatedButton Widget Demo
+# Elevated Button Demo App
 
-This Flutter app demonstrates the use of the `ElevatedButton` widget in a real-world use case: showing a `SnackBar` when the button is tapped.
-
-## 💡 Widget: `ElevatedButton`
-
-### Demo Use-Case:
-The app displays a simple button. When the user taps the button, a `SnackBar` message appears at the bottom of the screen confirming the action.
+A simple Flutter demo application showcasing the use of the `ElevatedButton` widget. This project is ideal for beginners looking to understand button interactions in Flutter.
 
 ---
 
-## ▶️ How to Run the Project
+## 🚀 Features
 
-1. Clone this repo:
+- Basic `ElevatedButton` usage
+- Simple and clean UI
+- Demonstrates button press interaction
+- Designed with Flutter best practices
 
+---
+
+## 🛠️ Built With
+
+- [Flutter](https://flutter.dev) 3.x
+- Dart
+- Android Studio / VS Code
+
+---
+
+## 📸 Screenshots
+
+> Add your app screenshots here (PNG or GIF)
+
+![App Screenshot](screenshots/app_screenshot.png)
+
+---
+
+## 🧪 Getting Started
+
+To run this project locally:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Berko-Adepa-Agnes/elevated_button_demo.git
