@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:elevated_button_demo/main.dart';
 
@@ -7,7 +6,7 @@ void main() {
     WidgetTester tester,
   ) async {
     // Build our widget with MaterialApp and Scaffold
-    await tester.pumpWidget(const MyApp());
+    await tester.pumpWidget(MyApp());
 
     // Find the button with text "Click Me"
     final buttonFinder = find.text('Click Me');

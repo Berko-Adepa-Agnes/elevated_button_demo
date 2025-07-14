@@ -1,38 +1,35 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Elevated Button Demo',
-      home: HomeScreen(), // This moves Scaffold into its own widget
+      home: HomeScreen(),
     );
   }
 }
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Elevated Button Demo')),
+      appBar: AppBar(title: Text('Emulator Screenshot Demo')),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text('You clicked me now!'),
-              ),
-            );
-          },
-          child: const Text('Click me now'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                print('Elevated Button Pressed');
+              },
+              child: Text('Click Me'),
+            ),
+            SizedBox(height: 20),
+            Image.asset('assets/images/emulator_screen.png'),
+          ],
         ),
       ),
     );
